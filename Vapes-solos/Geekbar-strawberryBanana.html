@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekbar-15000</title>
+    <link rel="icon" href="../media/logovapos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+     <!-- Nav -->
+     <header>
+        <nav class="navegador">
+            <img class="navegador-menu" src="../Media/Logo-menu.svg" alt="Menú despleglabe">
+            <a class="link-logo-nav" href="../index.html#menu">
+                <img class="navegador-logo" src="../Media/logovapos.ico" alt="Logo de la empresa vapos RGH">
+            </a>
+            <div class="redes">
+                <a class="link-logo-wpp" href="https://wa.me/5491155807824" target="_blank">
+                    <img src="../Media/whatsapp.svg" alt="WhatsApp" class="navegador-whatsapp">
+                </a>
+                <a class="link-logo-ig" href="https://instagram.com/vapes.rgh" target="_blank">
+                    <img src="../Media/instagram-line.svg" alt="Instagram" class="navegador-instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+<!-- Menu desplegable -->
+<div class="menu-desplegable" id="menu">
+    <nav class="navegador">
+        <a class="link-logo-nav" href="../index.html#menu">
+            <img class="navegador-logo" src="../Media/logovapos.ico" alt="Logo de la empresa vapos RGH">
+        </a>
+        <img class="close-icon" src="../Media/close.svg" alt="logo de cruz para cerrar el menu desplegable" id="close">
+    </nav>
+    <div class="menu-contenido">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="Geekbar-berry-blis.html">Geekbar 15000 puffs</a></li>
+            <li class="menu-item"><a href="Elfbar-strawberry-banana-10000.html">Elfbar 10000 puffs</a></li>
+            <li class="menu-item"><a href="ignite-watermelon-8000.html">Ignite 8000 puffs</a></li>
+            <li class="menu-item"><a href="#"><del>Ignite 15000 puffs</del></a></li>
+        </ul>
+
+        <!-- Redes sociales al final del menú -->
+        <div class="menu-social">
+            <a href="https://wa.me/5491155807824" target="_blank">
+                <img src="../Media/whatsapp.svg" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="https://instagram.com/vapes.rgh" target="_blank">
+                <img src="../Media/instagram-line.svg" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor del producto -->
+    <div class="product-container">
+        <!-- Imagen del producto -->
+        <div class="product-image">
+            <img src="../Media/geek-bar-pulse-15000-puffs-strawberry-banana.webp" alt="Producto Increíble">
+        </div>
+
+        <!-- Descripción del producto -->
+        <div class="product-details">
+            <h2>Geekbar Strawberry Banana 15000 puffs</h2>
+            <p>El vape Geekbar de 15000 puffs es la elección ideal para quienes buscan una experiencia de vapeo sofisticada y de alta calidad.</p>
+            <h3 class="price">Precio: $24.500</h3>
+            <div class="sabor-selector">
+                <h3>Elige tu sabor:</h3>
+                <ul class="sabor-list">
+                    <li><a href="Geekbar-Blueberry-Watermelon-15000.html">Blueberry Watermelon</a></li>
+                    <li><a href="Geekbar-Mexico-Mango.html">Mexico Mango</a></li>
+                    <li><a href="Geekbar-strawberryBanana.html">Strawberry Banana</a></li>
+                    <li><a href="Geekbar-Watermelon-Ice.html">Watermelon Ice</a></li>
+                    <li><a href="Geekbar-berry-blis.html">Berry Blis</a></li>
+                </ul>
+            </div>
+            <a id="whatsapp-link" href="#" target="_blank" class="btn-whatsapp">
+                Comprar vía WhatsApp
+            </a>
+        </div>
+        
+        <script>
+            // Detectar si es móvil o desktop
+            function isMobileDevice() {
+                return /Mobi/i.test(window.navigator.userAgent);
+            }
+        
+            // Obtener el elemento del enlace
+            var whatsappLink = document.getElementById('whatsapp-link');
+        
+            // Definir los enlaces para móvil y desktop
+            var mobileLink = "https://wa.me/5491155807824?text=Hola%20!%20como%20estas?%20Estaba%20buscando%20comprar%20el%20vape%20Geekbar%20Strawberry%20Banana.%20Precio:%20$24.500";
+            var desktopLink = "https://web.whatsapp.com/send?phone=5491155807824&text=Hola%20!%20como%20estas?%20Estaba%20buscando%20comprar%20el%20vape%20Geekbar%20Strawberry%20Banana.%20Precio:%20$24.500";
+        
+            // Asignar el enlace correspondiente según el dispositivo
+            if (isMobileDevice()) {
+                whatsappLink.href = mobileLink;
+            } else {
+                whatsappLink.href = desktopLink;
+            }
+        </script>    
+    </div>
+
+    <script src="../vapes.js"></script>
+</body>
+</html>
