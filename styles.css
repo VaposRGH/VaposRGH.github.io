@@ -206,6 +206,10 @@ body {
     transform: scale(1.05); /* Efecto hover */
 }
 
+.para-arreglar-desnivel{
+    height: 75%;
+}
+
 .producto-imagen {
     width: 100%;
     height: auto;
@@ -223,6 +227,9 @@ body {
     padding: 0 15px;
     color: #664caf;
     font-weight: bold;
+}
+.producto-descripcion del {
+    font-size: 0.8em;
 }
 
 .producto-boton {
@@ -269,6 +276,18 @@ body {
         grid-template-columns: repeat(4, 1fr); /* Hasta 4 columnas en pantallas grandes */
     }
 }
+/* Para pantallas grandes (computadoras) */
+@media (max-width: 1065px) {
+    .para-arreglar-desnivel{
+        height: 65%;
+    }
+}
+/* Para pantallas grandes (computadoras) */
+@media (max-width: 480px) {
+    .para-arreglar-desnivel{
+        height: 57%;
+    }
+}
 
 /* Ajustar tamaños de fuente para pantallas de 400px o menos */
 @media (max-width: 400px) {
@@ -283,6 +302,12 @@ body {
     .producto-boton {
         padding: 8px 15px; /* Reducir el tamaño del botón */
         font-size: 0.8em; /* Reducir el tamaño del texto en el botón */
+    }
+}
+
+@media (max-width: 299px) {
+    .para-arreglar-desnivel{
+        height: 70%;
     }
 }
 
@@ -317,7 +342,7 @@ body {
 /* Detalles del producto */
 .product-details {
     margin-top: 15px; /* Espaciado superior */
-    text-align: center; /* Texto centrado */
+    text-align: center; /* Texto cent.rado */
 }
 
 /* Precio del producto */
@@ -325,6 +350,11 @@ body {
     font-size: 26px; /* Tamaño de fuente grande para el precio */
     color: #4d63dc; /* Color rojo para destacar el precio */
     margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+.product-details .price del {
+    font-size: 15px;
+    color: #2b3780;
 }
 
 /* Botón de WhatsApp */
@@ -426,7 +456,7 @@ body {
 .sabor-list li {
     background-color: #f5f5f5;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 0; /* Quitar el padding aquí */
     transition: background-color 0.3s ease;
     width: 100%;
 }
@@ -435,31 +465,37 @@ body {
     background-color: #ddd;
 }
 
+/* Hacer que el enlace abarque todo el li */
 .sabor-list li a {
+    display: block; /* Hace que el enlace ocupe todo el li */
+    padding: 10px 15px; /* Mover el padding aquí */
     text-decoration: none;
     color: #664caf;
     font-weight: bold;
     font-size: 1.2em;
+    height: 100%; /* Ocupar todo el alto del li */
+    width: 100%;  /* Ocupar todo el ancho del li */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del enlace */
 }
 
 .sabor-list li a:hover {
     color: #333;
 }
 
-
 /* Ajustes entre 870px y 600px */
 @media (max-width: 870px) and (min-width: 600px) {
-    .sabor-list li a{
+    .sabor-list li a {
         font-size: 0.9em;
     }
 }
 
-/* Ajustes para pantallas de 400px hacia abajo */
+/* Ajustes para pantallas de 500px hacia abajo */
 @media (max-width: 500px) {
-    .sabor-list li a{
+    .sabor-list li a {
         font-size: 0.9em;
     }
-    .sabor-selector h3{
+
+    .sabor-selector h3 {
         font-size: 1.3em;
     }
 }
