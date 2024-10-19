@@ -370,6 +370,18 @@ body {
     margin-top: 15px; /* Espaciado superior */
 }
 
+.btn-whatsapp-gris{
+    display: inline-block; /* Alineación en línea */
+    background-color: #ccc; /* Color de fondo de WhatsApp */
+    color: white; /* Color de texto blanco */
+    padding: 12px 24px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+    margin-top: 15px; /* Espaciado superior */
+}
+
 .btn-whatsapp:hover {
     background-color: #1ebe57; /* Color más oscuro al pasar el ratón */
 }
@@ -389,7 +401,7 @@ body {
         text-align: center; /* Centramos los detalles del producto en móviles */
     }
 
-    .btn-whatsapp {
+    .btn-whatsapp, .btn-whatsapp-gris {
         margin-top: 20px; /* Mayor espaciado en móviles */
     }
 }
