@@ -217,6 +217,7 @@ body {
 }
 
 .producto-titulo {
+    margin-top: 3px;
     font-size: 1.5em;
     margin: 15px 0;
     color: #333;
