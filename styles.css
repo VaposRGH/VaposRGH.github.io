@@ -200,6 +200,7 @@ body {
     transition: transform 0.3s;
     max-width: 400px;
     text-decoration: none;
+    margin: 0 0 0 0;
 }
 
 .producto-card:hover {
@@ -246,6 +247,21 @@ body {
 
 .producto-boton:hover {
     background-color: #45a049;
+}
+
+/* SIN STOCK */
+
+/* Estilo para productos sin stock */
+.sin-stock {
+    opacity: 0.6; /* Opcional: hace que los productos sin stock se vean más tenues */
+}
+
+/* Línea divisoria */
+.linea-divisoria {
+    grid-column: 1 / -1; /* Ocupa toda la fila en la cuadrícula */
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
 }
 
 /* ---- RESPONSIVIDAD ---- */
